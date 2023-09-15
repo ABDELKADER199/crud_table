@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD SYSTEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add New Product</h1>
+
+        <div class="inputs_data">
+            <div class="title">
+                <input type="text" placeholder="product name">
+                <span>please enter your product name</span>
+            </div>
+            <div class="total_cost">
+            <input type="number" placeholder="price">
+            <span>please enter your product price</span>
+            <input type="number" placeholder="Tax %">
+            <span>please enter your tax on product </span>
+            <input type="number" placeholder="discount">
+            <span>please enter your discount product </span>
+            <input type="number" placeholder="Total" readonly>
+            </div>
+            <div class="count">
+                <input type="text" placeholder="count of added">
+                <span>please enter your count add</span>
+            </div>
+            <div class="department">
+                <input type="text" placeholder="Department">
+                <span>please enter department </span>
+            </div>
+            
+            <button>Add This Product</button>
+        </div>
+
+        <div class="list_product">
+            <h1>List All Product</h1>
+
+            <button onclick="clearbtn()">clear <span></span></button>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+    
+                                <th>ID</th>
+                                  
+                                <th>title</th>
+                                  
+                                <th>price</th>
+                                  
+                                <th>Tax</th>
+                                  
+                                <th>Discount</th>
+                                  
+                                <th>Total</th>
+                                  
+                                <th>Department</th>
+                                <th>Action</th>  
+                                </tr>
+                                
+                        </tbody>
+                    </table>
+                    
+            
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

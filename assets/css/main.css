@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(69, 69, 69);
+    color: #f3f2f2;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+
+
+.container h1 {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+
+.container .product_name{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.inputs_data{
+    margin-top: 20px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input[placeholder='product name']{
+    width: 98%;
+    margin-bottom: 20px;
+    background-color: rgb(80, 79, 79);
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+input[placeholder=price], input[placeholder='Tax %'],input[placeholder=discount],input[placeholder=Total]{
+    width: 24%;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(80, 79, 79);
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+
+}
+
+input[placeholder='count of added'],input[placeholder='Department']{
+    width: 98%;
+    margin-bottom: 20px;
+    background-color: rgb(80, 79, 79);
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.inputs_data button{
+    width: 98%;
+    margin-bottom: 20px;
+    background-color: goldenrod;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.list_product{
+    width: 100%;
+    margin-top:50px
+}
+
+table{
+    width: 100%;
+}
+
+table tr th{
+    border: 1px solid white;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table tr td{
+    border: 1px solid white;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+.inputs_data span{
+    color: red;
+    display: none;
+}
+
+
+.title , .total_cost , .count , .department{
+    width: 100%;
+}
+
+
+.list_product button{
+    width: 98%;
+    margin-bottom: 20px;
+    background-color: goldenrod;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.list_product span{
+    color: black;
+    font-size: larger;
+}
+
+i{
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: larger;
+    color: whitesmoke;
+}
+
+.none{
+    display: none;
+}
+
+
+@media (max-width:950px){
+
+    input[placeholder=price], input[placeholder='Tax %'],input[placeholder=discount]{
+        width: 32%;
+    }
+
+    input[placeholder=Total]{
+        width: 98%;
+    }
+
+    table{
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:750px){
+
+    input[placeholder="price"],input[placeholder="Tax %"]{
+        width: 48%;
+    }
+
+    input[placeholder= discount],input[placeholder= Total]{
+
+        width: 48%;
+
+    }
+
+
+
+    table{
+
+        width: 90%;
+    }
+}
+
+@media (max-width:600px){
+    body{
+        background-color: rgb(60, 6, 111);
+    }
+
+    input[placeholder=price],input[placeholder="Tax %"],input[placeholder=discount],input[placeholder= Total]{
+
+        width: 98%;
+
+    }
+
+    table{
+        width: 98%;
+    }
+}
+
+
